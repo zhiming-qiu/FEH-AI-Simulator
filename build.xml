@@ -50,8 +50,25 @@
         <javac srcdir="${test}" destdir="${test-build}" debug="true" includeantruntime="false">
             <classpath>
                 <pathelement path="${debug-build}"/>
+                <pathelement location="${vendor}/junit-4.13.jar"/>
+                <pathelement location="${vendor}/hamcrest-core-1.3.jar"/>
             </classpath>
         </javac>
+    </target>
+
+    <target name="test" depends="test-compile">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+            <classpath>
+                <pathelement location="${vendor}/junit-4.13.jar"/>
+                <pathelement location="${vendor}/hamcrest-core-1.3.jar"/>
+                <pathelement path="${debug-build}"/>
+                <pathelement path="${test-build}"/>
+            </classpath>
+            <formatter type="plain"/>
+            <batchtest haltonfailure="no" todir="${test-report}">
+                <fileset dir="${test}" includes="**/*Test*.java"/>
+            </batchtest>
+        </junit>
     </target>
 
     <target name="clean">
