@@ -26,6 +26,7 @@
         <checkstyle config="${vendor}/checkstyle/google_checks.xml" maxWarnings="1">
             <formatter type="xml" tofile="${test-report}/checkstyle_report.xml"/>
             <fileset dir="src" includes="**/*.java"/>
+            <fileset dir="test" includes="**/*.java"/>
         </checkstyle>
     </target>    
 
