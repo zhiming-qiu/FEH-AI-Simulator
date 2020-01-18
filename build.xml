@@ -23,7 +23,7 @@
     </target>
 
     <target name="checkstyle" depends="init">
-        <checkstyle config="${vendor}/checkstyle/sun_checks.xml">
+        <checkstyle config="${vendor}/checkstyle/google_checks.xml" maxWarnings="1">
             <formatter type="xml" tofile="${test-report}/checkstyle_report.xml"/>
             <fileset dir="src" includes="**/*.java"/>
         </checkstyle>
