@@ -31,3 +31,5 @@ If the build is successful, the following folders will be created:
 * `test-report` keeps various reports based on test execution
 
 If the build fails, take a look at the console output to figure out whewre build fails. Folder `test-report` has error reports for checkstyle violations and unit test failures.
+
+To check coverage report, open local file `${repo-dir}/test-report/cov-report/index.html` for more details.
