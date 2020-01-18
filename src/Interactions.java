@@ -1,6 +1,5 @@
 package src;
 
-public class Interactions
-{
+public class Interactions {
 
 }

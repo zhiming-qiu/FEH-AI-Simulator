@@ -1,6 +1,5 @@
 package src;
 
-public class Field
-{
+public class Field {
 
 }
