@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/EachOneChew/FEH-AI-Simulator.svg?branch=master)](https://travis-ci.com/EachOneChew/FEH-AI-Simulator)
+
+
 ![GitHub contributors](https://img.shields.io/github/contributors/EachOneChew/FEH-AI-Simulator)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/EachOneChew/FEH-AI-Simulator?include_prereleases)
 ![GitHub repo size](https://img.shields.io/github/repo-size/EachOneChew/FEH-AI-Simulator)
