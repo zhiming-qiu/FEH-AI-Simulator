@@ -6,10 +6,14 @@
     <property name="src" location="src"/>
     <property name="lib" location="lib"/>
     <property name="test" location="test"/>
+    <property name="vendor" location="vendor"/>
     <property name="release-build" location="release-build"/>
     <property name="debug-build" location="debug-build"/>
     <property name="test-build" location="test-build"/>
     <property name="test-report" location="test-report"/>
+
+    <taskdef resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties"
+        classpath="${vendor}/checkstyle/checkstyle-8.28-all.jar"/>
 
     <target name="init">
         <mkdir dir="${release-build}"/>
@@ -18,7 +22,14 @@
         <mkdir dir="${test-report}"/>
     </target>
 
-    <target name="release-compile" depends="init">
+    <target name="checkstyle" depends="init">
+        <checkstyle config="${vendor}/checkstyle/sun_checks.xml">
+            <formatter type="xml" tofile="${test-report}/checkstyle_report.xml"/>
+            <fileset dir="src" includes="**/*.java"/>
+        </checkstyle>
+    </target>    
+
+    <target name="release-compile" depends="checkstyle">
         <javac srcdir="${src}" destdir="${release-build}" includeantruntime="false">
             <classpath>
                 <pathelement location="${lib}/distance-calculator.jar"/>
