@@ -1,3 +1,9 @@
+![GitHub contributors](https://img.shields.io/github/contributors/EachOneChew/FEH-AI-Simulator)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/EachOneChew/FEH-AI-Simulator?include_prereleases)
+![GitHub repo size](https://img.shields.io/github/repo-size/EachOneChew/FEH-AI-Simulator)
+![GitHub](https://img.shields.io/github/license/EachOneChew/FEH-AI-Simulator)
+
+
 # Fire Emblem Heroes: AI Simulator
 
 An attempt at creating a tool that simulates AI behaviour in Fire Emblem Heroes.
