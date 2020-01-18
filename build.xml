@@ -1,0 +1,51 @@
+<project name="FEH-AI-Simulator">
+    <description>
+        A tool that simulates gameplay and AI behaviour in Fire Emblem Heroes.
+    </description>
+
+    <property name="src" location="src"/>
+    <property name="lib" location="lib"/>
+    <property name="test" location="test"/>
+    <property name="release-build" location="release-build"/>
+    <property name="debug-build" location="debug-build"/>
+    <property name="test-build" location="test-build"/>
+    <property name="test-report" location="test-report"/>
+
+    <target name="init">
+        <mkdir dir="${release-build}"/>
+        <mkdir dir="${debug-build}"/>
+        <mkdir dir="${test-build}"/>
+        <mkdir dir="${test-report}"/>
+    </target>
+
+    <target name="release-compile" depends="init">
+        <javac srcdir="${src}" destdir="${release-build}" includeantruntime="false">
+            <classpath>
+                <pathelement location="${lib}/distance-calculator.jar"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="debug-compile" depends="release-compile">
+        <javac srcdir="${src}" destdir="${debug-build}" debug="true" includeantruntime="false">
+            <classpath>
+                <pathelement location="${lib}/distance-calculator.jar"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="test-compile" depends="debug-compile">
+        <javac srcdir="${test}" destdir="${test-build}" debug="true" includeantruntime="false">
+            <classpath>
+                <pathelement path="${debug-build}"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="clean">
+        <delete dir="${release-build}"/>
+        <delete dir="${debug-build}"/>
+        <delete dir="${test-build}"/>
+        <delete dir="${test-report}"/>
+    </target>
+</project>

@@ -2,3 +2,8 @@
 .DS_Store
 # VSCode
 .vscode/
+# Temp folders for build
+debug-build/
+release-build/
+test-build/
+test-report/
