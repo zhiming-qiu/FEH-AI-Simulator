@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/EachOneChew/FEH-AI-Simulator.svg?branch=master)](https://travis-ci.com/EachOneChew/FEH-AI-Simulator)
+![Build Status](https://ci.appveyor.com/api/projects/status/github/EachOneChew/FEH-AI-Simulator?branch=master&svg=true)
 ![codecov](https://codecov.io/gh/zhiming-qiu/FEH-AI-Simulator/branch/master/graph/badge.svg)
 
 
