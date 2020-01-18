@@ -29,3 +29,5 @@ If the build is successful, the following folders will be created:
 * `debug-build` keeps compiled Java class files with debug info embedded for testing/debugging/instrumentation purposes
 * `test-build` keeps compiled Java class files for unit tests
 * `test-report` keeps various reports based on test execution
+
+If the build fails, take a look at the console output to figure out whewre build fails. Folder `test-report` has error reports for checkstyle violations and unit test failures.
