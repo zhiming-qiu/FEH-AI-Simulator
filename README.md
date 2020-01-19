@@ -29,16 +29,11 @@ The distance calculator implementation can be found in [release page](https://gi
 
 # Build
 
-This project uses `ant` as the build system. To start a build, simply open terminal and run command:
-
-```
-./build.sh
-```
-
-If you are on Windows, open MSDOS prompt and run command:
-```
-build.bat
-```
+This project uses `ant` as the build system. To start a build, 
+  - When you are on <img src="./images/linux.png" alt="Linux" width="20"/> or <img src="./images/macos.png" alt="Mac OS" width="20"/>
+    - Open terminal and run command: `./build.sh`
+  - When you are on <img src="./images/windows.png" alt="Windows" width="20"/>
+    - open MSDOS prompt and run `build.bat`
 
 The build process consists of tasks defined in `build.xml`. The dependency between these tasks is also specified.
 
