@@ -35,6 +35,11 @@ This project uses `ant` as the build system. To start a build, simply open termi
 ./build.sh
 ```
 
+If you are on Windows, open MSDOS prompt and run command:
+```
+build.bat
+```
+
 The build process consists of tasks defined in `build.xml`. The dependency between these tasks is also specified.
 
 If the build is successful, the following folders will be created and populated:
