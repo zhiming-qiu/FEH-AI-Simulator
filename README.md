@@ -27,6 +27,10 @@ The distance calculator implementation can be found in [release page](https://gi
 * `test` keeps unit test files
 * `vendor` keeps tools/libs for infrastructure and processes
 
+# Prerequisite
+
+You need to have [OpenJDK 11](https://openjdk.java.net/projects/jdk/11/) or above set up in your local build environment or you have to fix the JDK environment.
+
 # Build
 
 This project uses `ant` as the build system. To start a build, 
@@ -49,3 +53,12 @@ If the build fails, take a look at the console output to figure out where build 
   - `test-report/checkstyle_report.xml` tells any style violations. For now google style is used and the current checkstyle config  does not tolerate any warnings. You may also tailor the check style file to suit your needs.
   - Under `test-report`, you can find each unit test's output as a txt file.
   - To check coverage report, open local file `${repo-dir}/test-report/cov-report/index.html` for more details.
+  
+  # Development
+  ## Set up VSCode
+  Coming...
+  ## How to run or debug
+  Coming...
+  
+  # Contribution
+  Coming...
