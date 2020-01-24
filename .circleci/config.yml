@@ -3,8 +3,8 @@ version: 2.1
 # Use a package of configuration called an orb.
 jobs:
   build:
-    macos:
-      xcode: 11.3.0
+    docker:
+      -image: circleci/python:3.6.2-stretch-browsers
     steps:
       - checkout
       - run: ./build.sh
