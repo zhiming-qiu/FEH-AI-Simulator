@@ -3,6 +3,8 @@ version: 2.1
 # Use a package of configuration called an orb.
 jobs:
   build:
+    macos:
+      xcode: 11.3.0
     steps:
       - checkout
       - run: ./build.sh
